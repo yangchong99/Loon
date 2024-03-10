@@ -1,0 +1,14 @@
+#!name=广电去广告
+#!desc=去除开屏广告
+#!author=yangchong99 by Keywos
+#!homepage=https://raw.githubusercontent.com/yangchong99/Loon/main/plugin/guang_dian.plugin
+#!icon=https://raw.githubusercontent.com/Moli-X/Resources/main/Icon/Image/Design.png
+
+[General]
+real-ip = *.10099.com.cn
+
+[Script]
+http-response ^https?:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage script-path=https://raw.githubusercontent.com/Keywos/rule/main/script/guang_dian/js/index.js, requires-body=true, tag=10099
+
+[MITM]
+hostname = app.10099.com.cn
