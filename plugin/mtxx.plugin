@@ -1,0 +1,11 @@
+#!name=mtxx
+#!desc=美图秀秀SVIP
+#!author=yangchong99 by chxm1023
+#!homepage=https://raw.githubusercontent.com/yangchong99/Loon/main/plugin/mtxx.plugin
+
+
+[Script]
+http-response ^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/mtxx.js, requires-body=true, timeout=60, tag=mtxx
+
+[MITM]
+hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com
