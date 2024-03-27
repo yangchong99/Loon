@@ -2,6 +2,7 @@
 // 转自https://raw.githubusercontent.com/RS0485/network-rules/main/scripts/gas-price.js
 // 只兼容loon
 
+
 var region = "guangdong";
 
 const loondq = $persistentStore.read("guangdong");
@@ -24,7 +25,8 @@ $httpClient.get(
   (error, response, data) => {
     if (error) {
       console.log(`解析油价信息失败, URL=${query_addr}`);
-      done({});
+    $done({ok:0});
+
     } else {
       const reg_price =
         /<dl>[\s\S]+?<dt>(.*油)<\/dt>[\s\S]+?<dd>(.*)\(元\)<\/dd>/gm;
@@ -81,9 +83,11 @@ $httpClient.get(
 
       if (prices.length !== 4) {
         console.log( `解析油价信息失败, 数量=${prices.length},  URL=${query_addr}`);
-        done();
+        $done({ok:0});
+
       } else {
-        $done($notification.post("实时油价信息", `${friendly_tips}`, `${prices[0].name}  ${prices[0].value}\n${prices[1].name}  ${prices[1].value}\n${prices[2].name}  ${prices[2].value}\n${prices[3].name}  ${prices[3].value}`, "http://m.qiyoujiage.com/guangdong.shtml"));
+$notification.post("实时油价信息", `${friendly_tips}`, `${prices[0].name}  ${prices[0].value}\n${prices[1].name}  ${prices[1].value}\n${prices[2].name}  ${prices[2].value}\n${prices[3].name}  ${prices[3].value}`, "http://m.qiyoujiage.com/guangdong.shtml")
+        $done({ok:1});     
       }
     }
   }
