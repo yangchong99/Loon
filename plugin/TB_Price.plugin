@@ -2,7 +2,7 @@
 #!desc = 在淘宝应用内嵌入比价信息
 #!author =yangchong99 by yichahucha
 #!homepage=https://raw.githubusercontent.com/yangchong99/Loon/main/plugin/TB_Price.plugin
-#!icon = https://github.com/Centralmatrix3/Matrix-io/blob/master/Gallery/Color/Taobao.png
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Taobao.png
 
 
 [Script]
