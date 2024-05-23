@@ -2,7 +2,7 @@
 #!desc=高德去广告
 #!author=yangchong99 by RuCu6 kokoryh
 #!homepage=https://raw.githubusercontent.com/yangchong99/Loon/main/plugin/Amap.plugin
-#!icon=https://github.com/yangchong99/icon/blob/main/apps/GaodeMap.jpg
+#!icon=https://raw.githubusercontent.com/yangchong99/icon/main/apps/GaodeMap.jpg
 #!update=2024-02-11 20:25
 
 [Rewrite]
