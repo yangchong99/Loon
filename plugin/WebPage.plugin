@@ -6,6 +6,9 @@
 #!update=2024-02-15 14:40
 
 [Rewrite]
+# 谷歌服务重定向 //*.google.cn
+^https?:\/\/www\.google\.cn https://www.google.com 302
+^https?:\/\/translate\.google\.cn https://translate.google.com 302
 # PornHub (https://cn.pornhub.com/) //*.pornhub.com
 ^https:\/\/(cn|www)\.pornhub\.com\/_xa\/ads(_batch)?\? - reject
 ^https:\/\/18comic\.(org|vip)\/templates\/frontend\/airav\/js\/jquery.avs.*?\.js.* - reject
