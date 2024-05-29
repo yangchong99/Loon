@@ -43,4 +43,4 @@ http-response ^https:\/\/(\w{0,3}(\.){0,1}(jable)(\.)\w{0,3})(?!.*?(\/(cdn-cgi))
 http-response ^https:\/\/missav\.com\/(dm\d+\/)?\w{2}\/[\w-]+ script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js, requires-body=true, timeout=60, tag=myBlockAds
 
 [MITM]
-hostname = boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com, *.pornhub.com, 18comic.org, 18comic.vip, www.javbus.com, *.avple.tv, jable.tv, missav.com
+hostname = boxer.baidu.com, m.baidu.com, www.baidu.com, zhidao.baidu.com, *.google.cn, *.pornhub.com, 18comic.org, 18comic.vip, www.javbus.com, *.avple.tv, jable.tv, missav.com
