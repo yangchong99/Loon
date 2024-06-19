@@ -1,0 +1,12 @@
+#!name=建行生活cookie
+#!desc=建行生活获取cookie
+#!author=yangchong99 by FoKit
+#!homepage=https://raw.githubusercontent.com/yangchong99/Loon/main/plugin/CCBLife_cookie.plugin
+#!icon=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/ccb.png
+#!update=2024-02-11 20:25
+
+[MITM]
+hostname = yunbusiness.ccb.com
+
+[Script]
+http-request ^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin) tag=建行数据, script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,requires-body=1
