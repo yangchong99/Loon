@@ -6,7 +6,7 @@
 #!update=2024-06-19 22:32
 
 [Script]
-http-response ^https:\/\/www\.nodeseek\.com\/api\/account\/getInfo\/.+\?readme= script-path=https://gist.githubusercontent.com/Sliverkiss/2b5acc2c4960dd06618c6912302c2c7f/raw/nodeseek.js, requires-body=true, timeout=60, tag=NodeSeek获取token
+http-response ^https:\/\/www\.nodeseek\.com\/api\/account\/getInfo\/(.+)phone=1 script-path=https://gist.githubusercontent.com/Sliverkiss/2b5acc2c4960dd06618c6912302c2c7f/raw/nodeseek.js, requires-body=true, timeout=60, tag=NodeSeek获取token
 
 [MITM]
 hostname = www.nodeseek.com
