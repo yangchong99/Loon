@@ -1,0 +1,12 @@
+#!name=sfsy_token
+#!desc=顺丰速运获取token
+#!author=yangchong99 by Slkiss
+#!homepage=https://raw.githubusercontent.com/yangchong99/Loon/main/plugin/sfsy_token.plugin
+#!icon=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Sfsy.png
+#!update=2024-09-04
+
+[Script]
+http-response ^https:\/\/mcs-mimp-web\.sf-express\.com\/mcs-mimp\/share\/weChat\/shareGiftReceiveRedirect.+ script-path=https://raw.githubusercontent.com/yangchong99/QuantumultX/main/script/sfsy.js, requires-body=true, timeout=60, tag=顺丰速运获取token
+
+[MITM]
+hostname = mcs-mimp-web.sf-express.com
