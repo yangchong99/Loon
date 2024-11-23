@@ -2,8 +2,8 @@
 #!desc=建行生活获取cookie
 #!author=yangchong99 by FoKit
 #!homepage=https://raw.githubusercontent.com/yangchong99/Loon/main/plugin/CCBLife_cookie.plugin
-#!icon=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/ccb.png
-#!update=2024-06-19 22:25
+#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/ccbLife.jpg
+#!update=2024-11-24 00:51:50
 
 [MITM]
 hostname = yunbusiness.ccb.com
