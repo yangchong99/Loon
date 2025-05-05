@@ -4,7 +4,7 @@
 
 
 const $ = new compatibility()
-const wait_mayi = $.read('Alipay_wait_mayi') * 1000 || 5000
+const wait_mayi = $.read('Alipay_wait_mayi') * 1000 || 2500
 const point = "alipays://platformapi/startapp?appId=20000160&url=/www/pointSignIn.html"
 const mayi = "alipay://platformapi/startapp?appId=60000002"
 
