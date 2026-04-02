@@ -20,7 +20,7 @@
 ### 1\. 导入配置
 
 复制下方链接，在 Loon 配置文件管理中选择“从 URL 下载”：
-`https://raw.githubusercontent.com/yangchong99/Loon/main/default.conf`
+`https://raw.githubusercontent.com/yangchong99/Loon/main/Panda_Loon.conf`
 
 ### 2\. 添加插件
 
