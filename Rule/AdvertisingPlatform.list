@@ -1,15 +1,20 @@
-# 2025-09-24 08:04:06
+# 2026-04-02 09:43:32
 # 源于树哥广告平台移植https://klraw.pages.dev/kelv1n1n/script/refs/heads/main/filter/ad-platform.snippet?token=209863
 
-domain-keyword, pglstatp-toutiao.com
-domain-keyword, pangolin-sdk-toutiao
-domain, mi.gdt.qq.com
-domain, v2mi.gdt.qq.com
-domain-keyword, tnc3-alisc1.zijieapi.com
-domain-keyword, lf-cdn-tos.bytescm.com
-domain-keyword, wkanx.com
-domain, mobads.baidu.com
-domain, open.e.kuaishou.cn
-domain, open.e.kuaishou.com
-domain-suffix, yfanads.com
-domain-suffix, adkwai.com
+DOMAIN-KEYWORD,pglstatp-toutiao.com
+DOMAIN-KEYWORD,pangolin-sdk-toutiao
+DOMAIN,mi.gdt.qq.com
+DOMAIN,v2mi.gdt.qq.com
+DOMAIN-KEYWORD,tnc3-alisc1.zijieapi.com
+DOMAIN-KEYWORD,lf-cdn-tos.bytescm.com
+DOMAIN-KEYWORD,wkanx.com
+DOMAIN,mobads.baidu.com
+DOMAIN,open.e.kuaishou.cn
+DOMAIN,open.e.kuaishou.com
+DOMAIN-SUFFIX,yfanads.com
+DOMAIN-SUFFIX,adkwai.com
+DOMAIN,adsmind.ugdtimg.com
+DOMAIN,pgdt.ugdtimg.com
+DOMAIN,da.bridgeturbo.com
+DOMAIN,adx-os.bridgeturbo.com
+DOMAIN,adx-bj.anythinktech.com
