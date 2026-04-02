@@ -1,0 +1,39 @@
+#!name = TG外链跳转
+#!desc = Telegram外部链接跳转，可选目标客户端为Telegram、Swiftgram、Turrit、iMe、Nicegram、Lingogram，默认选择Telegram跳转至官方客户端。
+#!openUrl = 
+#!author = sooyaaabo,𝗽𝗮𝗻𝗱𝗮𝕏
+#!tag = 
+#!system = 
+#!system_version = 
+#!loon_version = 
+#!homepage = 
+#!icon = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Telegram-01.png
+#!date = 2026-04-02 10:56:13
+
+[Argument]
+t.me_redirect = select, "Telegram", "Swiftgram", "Turrit", "iMe", "Nicegram", "Lingogram", tag = 跳转至对应客户端
+
+[Rewrite]
+# Telegram
+# (https:\/\/)?t\.me\/(.+) 302 tg://resolve?domain=$2
+
+# Swiftgram
+# (https:\/\/)?t\.me\/(.+) 302 sg://resolve?domain=$2
+
+# Turrit
+# (https:\/\/)?t\.me\/(.+) 302 turrit://resolve?domain=$2
+
+# iMe
+# (https:\/\/)?t\.me\/(.+) 302 ime://resolve?domain=$2
+
+# Nicegram
+# (https:\/\/)?t\.me\/(.+) 302 ng://resolve?domain=$2
+
+# Lingogram
+# (https:\/\/)?t\.me\/(.+) 302 lingo://resolve?domain=$2
+
+[Script]
+http-response (https:\/\/)?t\.me\/(.+) script-path = https://raw.githubusercontent.com/yangchong99/Loon/main/script/TG_redirect.js, requires-body = false, tag = Telegram[t.me]重定向, argument=[{t.me_redirect}]
+
+[MitM]
+hostname = t.me

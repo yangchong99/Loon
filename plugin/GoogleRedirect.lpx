@@ -1,0 +1,18 @@
+#!name=Google重定向
+#!desc=将Google搜索重定向至.com域名
+#!openUrl=
+#!author=𝗽𝗮𝗻𝗱𝗮𝕏
+#!tag=
+#!system=
+#!system_version=
+#!loon_version=
+#!homepage=
+#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Google.png
+#!date=2026-04-02 00:08:52
+
+[Rewrite]
+^https?:\/\/(www.)?(g|google)\.cn header https://www.google.com
+^https?:\/\/(ditu|maps).google\.cn header https://maps.google.com
+
+[MitM]
+hostname=g.cn,google.cn,www.google.cn,ditu.google.cn,maps.google.cn
